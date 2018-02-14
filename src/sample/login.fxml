@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Pane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #e1bee7;">
          <children>
@@ -23,7 +23,7 @@
             <Label layoutX="14.0" layoutY="362.0" text="\@CoypRightbypop" />
          </children>
       </Pane>
-      <Button fx:id="btnLogin" layoutX="376.0" layoutY="171.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="162.0" style="-fx-background-color: #ff80ab;" text="Login">
+      <Button fx:id="btnLogin" layoutX="376.0" layoutY="171.0" mnemonicParsing="false" onAction="#Login" prefHeight="29.0" prefWidth="162.0" style="-fx-background-color: #ff80ab;" text="Login">
          <font>
             <Font size="13.0" />
          </font>
@@ -33,13 +33,13 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="415.0" layoutY="344.0" prefHeight="36.0" prefWidth="150.0" textFill="#f81c1c">
+      <Label fx:id="dbStatus" layoutX="415.0" layoutY="344.0" prefHeight="36.0" prefWidth="150.0" textFill="#f81c1c">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
       <Label fx:id="loginStatus" layoutX="326.0" layoutY="30.0" prefHeight="17.0" prefWidth="261.0" />
       <JFXTextField fx:id="username" focusColor="#f54ff2" layoutX="373.0" layoutY="62.0" prefHeight="25.0" prefWidth="162.0" promptText="username" />
-      <JFXPasswordField layoutX="373.0" layoutY="111.0" prefHeight="25.0" prefWidth="162.0" promptText="password" />
+      <JFXPasswordField fx:id="password" layoutX="373.0" layoutY="111.0" prefHeight="25.0" prefWidth="162.0" promptText="password" />
    </children>
 </AnchorPane>
